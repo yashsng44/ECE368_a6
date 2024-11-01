@@ -15,5 +15,8 @@ a6: $(OBJS)
 test_file: a6
 	$(VAL) --track-origins=yes ./a6 3.po test.pr test.dim test.pck
 
+8_po: a6
+	$(VAL) --track-origins=yes ./a6 8.po test.pr test.dim test.pck
+
 clean: # remove all machine generated files
-	rm -f a6 *.o output? *~ memcheck.txt *.pr *.dim *.pck
+	rm -f a6 *.o output? *~ memcheck.txt 

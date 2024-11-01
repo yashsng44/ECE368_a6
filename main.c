@@ -16,6 +16,8 @@ Stack * stack_head = malloc(sizeof(Stack));
 buildTree(argv[1], &stack_head); // builds tree from the input tree in post order...
 print_from_stack(argv[2], &stack_head);
 print_from_stack(argv[3], &stack_head);
+print_from_stack(argv[4], &stack_head);
+// give me a second
 
 free_stack(stack_head);
 free(stack_head);

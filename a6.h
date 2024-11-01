@@ -10,8 +10,10 @@
 typedef struct Node
 { 
     char node_name; // print out the ASCII representation of the numbers and characters
-    int coord_x; 
-    int coord_y;
+    int width; 
+    int height;
+    int org_x;
+    int org_y;
     struct Node *left;
     struct Node *right;
 } Node;
@@ -25,4 +27,5 @@ typedef struct Stack
 void buildTree(char * filename, Stack ** stack_head);
 void print_from_stack(char * filename, Stack ** stack_head);
 void free_stack(Stack * stack_head);
+
 #endif
